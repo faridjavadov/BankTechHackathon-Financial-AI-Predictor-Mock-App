@@ -1,0 +1,213 @@
+import { PortfolioAnalysis } from "../types/portfolio_types";
+
+export const portfolioAnalysis: PortfolioAnalysis = {
+  summary: {
+    totalValue: 158735.42,
+    totalInvestment: 145000.00,
+    totalProfitLoss: 13735.42,
+    totalProfitLossPercentage: 9.47,
+    dailyChange: 1250.30,
+    dailyChangePercentage: 0.79,
+    weeklyChange: 3215.68,
+    weeklyChangePercentage: 2.07,
+    monthlyChange: 5842.12,
+    monthlyChangePercentage: 3.82,
+    expectedROI: 7.3,
+    riskScore: 6.2,
+    lastUpdated: '2023-06-15T17:45:00Z',
+  },
+  assets: [
+    {
+      id: 'pf-asset-001',
+      assetType: 'stock',
+      symbol: 'AAPL',
+      name: 'Apple Inc.',
+      quantity: 50,
+      purchasePrice: 165.75,
+      currentPrice: 187.32,
+      currentValue: 9366.00,
+      profitLoss: 1078.50,
+      profitLossPercentage: 13.01,
+      allocationPercentage: 5.9,
+      predictedValue: 9922.50,
+      expectedROI: 5.9,
+      riskScore: 4,
+      recommendedAction: 'buy',
+    },
+    {
+      id: 'pf-asset-002',
+      assetType: 'stock',
+      symbol: 'MSFT',
+      name: 'Microsoft Corporation',
+      quantity: 30,
+      purchasePrice: 350.20,
+      currentPrice: 403.78,
+      currentValue: 12113.40,
+      profitLoss: 1607.40,
+      profitLossPercentage: 15.30,
+      allocationPercentage: 7.6,
+      predictedValue: 12615.00,
+      expectedROI: 4.1,
+      riskScore: 3,
+      recommendedAction: 'buy',
+    },
+    {
+      id: 'pf-asset-003',
+      assetType: 'stock',
+      symbol: 'TSLA',
+      name: 'Tesla, Inc.',
+      quantity: 25,
+      purchasePrice: 275.00,
+      currentPrice: 248.42,
+      currentValue: 6210.50,
+      profitLoss: -664.50,
+      profitLossPercentage: -9.67,
+      allocationPercentage: 3.9,
+      predictedValue: 5743.75,
+      expectedROI: -7.5,
+      riskScore: 8,
+      recommendedAction: 'sell',
+    },
+    {
+      id: 'pf-asset-004',
+      assetType: 'currency',
+      symbol: 'USD/TRY',
+      name: 'US Dollar / Turkish Lira',
+      quantity: 50000,
+      purchasePrice: 30.45,
+      currentPrice: 31.73,
+      currentValue: 31730.00,
+      profitLoss: 1280.00,
+      profitLossPercentage: 4.20,
+      allocationPercentage: 20.0,
+      predictedValue: 32850.00,
+      expectedROI: 3.53,
+      riskScore: 7,
+      recommendedAction: 'buy',
+    },
+    {
+      id: 'pf-asset-005',
+      assetType: 'commodity',
+      symbol: 'XAU',
+      name: 'Gold',
+      quantity: 15,
+      purchasePrice: 2120.80,
+      currentPrice: 2345.60,
+      currentValue: 35184.00,
+      profitLoss: 3372.00,
+      profitLossPercentage: 10.61,
+      allocationPercentage: 22.2,
+      predictedValue: 36153.00,
+      expectedROI: 2.8,
+      riskScore: 4,
+      recommendedAction: 'buy',
+    },
+    {
+      id: 'pf-asset-006',
+      assetType: 'stock',
+      symbol: 'NVDA',
+      name: 'NVIDIA Corporation',
+      quantity: 40,
+      purchasePrice: 780.50,
+      currentPrice: 925.17,
+      currentValue: 37006.80,
+      profitLoss: 5786.80,
+      profitLossPercentage: 18.53,
+      allocationPercentage: 23.3,
+      predictedValue: 39416.80,
+      expectedROI: 6.5,
+      riskScore: 6,
+      recommendedAction: 'buy',
+    },
+    {
+      id: 'pf-asset-007',
+      assetType: 'commodity',
+      symbol: 'OIL',
+      name: 'Crude Oil (WTI)',
+      quantity: 100,
+      purchasePrice: 78.30,
+      currentPrice: 74.20,
+      currentValue: 7420.00,
+      profitLoss: -410.00,
+      profitLossPercentage: -5.24,
+      allocationPercentage: 4.7,
+      predictedValue: 7240.00,
+      expectedROI: -2.4,
+      riskScore: 7,
+      recommendedAction: 'sell',
+    },
+    {
+      id: 'pf-asset-008',
+      assetType: 'currency',
+      symbol: 'EUR/USD',
+      name: 'Euro / US Dollar',
+      quantity: 20000,
+      purchasePrice: 1.09,
+      currentPrice: 1.098,
+      currentValue: 21960.00,
+      profitLoss: 160.00,
+      profitLossPercentage: 0.73,
+      allocationPercentage: 13.8,
+      predictedValue: 21800.00,
+      expectedROI: -0.73,
+      riskScore: 5,
+      recommendedAction: 'hold',
+    }
+  ],
+  assetAllocation: [
+    { assetType: 'Stocks', value: 64696.70, percentage: 40.7 },
+    { assetType: 'Currencies', value: 53690.00, percentage: 33.8 },
+    { assetType: 'Commodities', value: 42604.00, percentage: 26.8 },
+  ],
+  sectorAllocation: [
+    { sector: 'Technology', value: 58486.20, percentage: 36.8 },
+    { sector: 'Currency Markets', value: 53690.00, percentage: 33.8 },
+    { sector: 'Precious Metals', value: 35184.00, percentage: 22.2 },
+    { sector: 'Energy', value: 7420.00, percentage: 4.7 },
+    { sector: 'Automotive', value: 6210.50, percentage: 3.9 }
+  ],
+  geographicAllocation: [
+    { region: 'North America', value: 64696.70, percentage: 40.7 },
+    { region: 'Global', value: 77874.00, percentage: 49.1 },
+    { region: 'Turkey', value: 31730.00, percentage: 20.0 }
+  ],
+  performanceHistory: {
+    dates: [
+      '2023-01-15', '2023-02-15', '2023-03-15', '2023-04-15', '2023-05-15', '2023-06-15'
+    ],
+    values: [
+      140250.80, 143650.25, 147120.60, 152340.90, 155620.30, 158735.42
+    ]
+  },
+  riskAnalysis: {
+    volatility: 15.3,
+    sharpeRatio: 1.8,
+    maxDrawdown: 12.4,
+    diversificationScore: 7.2
+  },
+  recommendations: {
+    summary: "Portföyünüz genel olarak iyi performans gösteriyor, ancak bazı optimizasyonlar yapılabilir. TSLA ve OIL pozisyonlarınızı azaltıp, daha fazla AAPL ve NVDA almanız önerilir. USD/TRY pozisyonunuzu arttırarak kısa vadeli kar fırsatlarını değerlendirebilirsiniz.",
+    actions: [
+      {
+        assetId: 'pf-asset-001',
+        action: 'buy',
+        reasoning: 'Appleın güçlü finansal durumu ve yeni AI girişimleri fiyatta daha fazla artış potansiyeli sunuyor.'
+      },
+      {
+        assetId: 'pf-asset-003',
+        action: 'sell',
+        reasoning: 'Teslanın fiyatı önümüzdeki dönemde düşüş eğiliminde, rekabet artıyor ve kar marjları baskılanabilir.'
+      },
+      {
+        assetId: 'pf-asset-004',
+        action: 'buy',
+        reasoning: 'USD/TRY paritesi, Türkiyenin makroekonomik koşulları nedeniyle yükseliş trendinde devam etmesi bekleniyor.'
+      },
+      {
+        assetId: 'pf-asset-007',
+        action: 'sell',
+        reasoning: 'Petrol fiyatları, küresel talep endişeleri ve üretim artışları nedeniyle baskı altında kalabilir.'
+      }
+    ]
+  }
+};
