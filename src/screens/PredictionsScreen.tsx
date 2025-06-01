@@ -25,15 +25,13 @@ type PredictionsScreenRouteProp = RouteProp<RootStackParamList, 'Predictions'>;
 
 interface Props {
   navigation: PredictionsScreenNavigationProp;
-  route: PredictionsScreenRouteProp;
 }
 
 type PredictionType = 'all' | 'currency' | 'commodity' | 'stock';
 type SortType = 'confidence' | 'roi' | 'timeframe';
 
-const PredictionsScreen: React.FC<Props> = ({ navigation, route }) => {
-  const initialFilter = route.params?.filter || 'all';
-  const [activeTab, setActiveTab] = useState<PredictionType>(initialFilter as PredictionType);
+const PredictionsScreen: React.FC<Props> = ({ navigation }) => {
+  const [activeTab, setActiveTab] = useState<PredictionType>('all');
   const [sortBy, setSortBy] = useState<SortType>('confidence');
   
   const getPredictionData = () => {

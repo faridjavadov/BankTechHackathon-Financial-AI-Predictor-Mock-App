@@ -12,6 +12,7 @@ import PredictionDetailScreen from '../screens/PredictionDetailScreen';
 import AssetDetailScreen from '../screens/AssetDetailsScreen';
 import NotificationsScreen from '../screens/NotificationsScreen';
 import PortfolioAnalysisScreen from '../screens/portolioAnalysisScreen';
+import { Text, View } from 'react-native';
 
 export type RootStackParamList = {
     Main: {
@@ -43,9 +44,12 @@ export type RootStackParamList = {
 const Stack = createStackNavigator<RootStackParamList>();
 
 const PlaceholderScreen: React.FC<{ route: any }> = ({ route }) => {
-    return null; // This would be replaced with actual screen implementations
+    return (
+        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+            <Text>Screen under development</Text>
+        </View>
+    );
 };
-
 const AppNavigator: React.FC = () => {
     return (
 

@@ -17,11 +17,11 @@ const TabNavigator = () => {
         headerShown: false,
       }}
     >
-      <Tab.Screen name="Dashboard" component={DashboardScreen as React.ComponentType<{}>} />
-      <Tab.Screen name="Predictions" component={PredictionsScreen as React.ComponentType<{}>} />
-      <Tab.Screen name="News" component={NewsScreen as React.ComponentType<{}>} />
-      <Tab.Screen name="Portfolio" component={PortfolioScreen as React.ComponentType<{}>} />
-      <Tab.Screen name="Profile" component={ProfileScreen as React.ComponentType<{}>} />
+      <Tab.Screen name="Dashboard" component={DashboardScreen} />
+      <Tab.Screen name="Predictions" component={PredictionsScreen} />
+      <Tab.Screen name="News" component={NewsScreen} />
+      <Tab.Screen name="Portfolio" component={PortfolioScreen} />
+      <Tab.Screen name="Profile" component={ProfileScreen} />
     </Tab.Navigator>
   );
 };
