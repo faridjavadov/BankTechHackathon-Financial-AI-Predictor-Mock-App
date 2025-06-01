@@ -64,7 +64,7 @@ const AppNavigator: React.FC = () => {
                 <Stack.Screen name="Portfolio" component={PortfolioScreen} />
                 <Stack.Screen name="Profile" component={ProfileScreen} />
 
-                {/* Detail screens */}
+                
                 <Stack.Screen
                     name="NewsDetail"
                     component={NewsDetailScreen}
@@ -76,7 +76,7 @@ const AppNavigator: React.FC = () => {
                     options={{ headerShown: true, title: 'Prediction Details' }}
                 />
 
-                {/* Rest of your screens */}
+                
                 <Stack.Screen
                     name="AssetDetail"
                     component={AssetDetailScreen}
